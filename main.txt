@@ -1,0 +1,15 @@
+//lo que va en las  dimenciones
+
+<dimen name="test">48dp</dimen>
+
+//creamos una variable
+
+int valueInPixels = (int) getResources().getDimension(R.dimen.test)
+
+//otra foema de verlo
+
+int dp = (int) (getResources().getDimension(R.dimen.test) / getResources().getDisplayMetrics().density)
+
+
+//informacion recuperada de 
+//http://stackoverflow.com/questions/11121028/load-dimension-value-from-res-values-dimension-xml-from-source-code
